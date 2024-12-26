@@ -1,0 +1,25 @@
+{
+  "name": "realtime-db-comparison",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Paul Fidika <paul@fidika.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:client": "ts-node src/client.ts",
+    "start:writer": "ts-node src/writer.ts",
+    "start:mongodb": "docker-compose up -d"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "realm": "^12.3.1",
+    "dotenv": "^16.3.1",
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/faker": "^5.5.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
