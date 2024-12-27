@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SurrealDB Live Query Demo</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .image-card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        #latency {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="latency">Last update latency: -- ms</div>
+    <div class="image-grid" id="imageGrid"></div>
+    <script type="module" src="./main.ts"></script>
+</body>
+</html> 
